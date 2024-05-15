@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="list_input">
+            <input type="text" id="list-display">
+        </div>
+        <div class="list_add">
+            <button type="submit" onclick="listDownTask()">Add</button>
+        </div>
+        <div class="task_list">
+            <ul id="result">
+                
+            </ul>
+        </div>
+    </div>
+    <script>
+    function listDownTask(){
+        var data = document.getElementById("list-display").value;
+        var taskResult = document.getElementById("result");
+        
+        // var li = document.createElement("li")
+        // taskResult.appendChild(li)
+        //  console.log(taskResult);
+
+        // Generated list in ul and inherit
+        taskResult.innerHTML += `<li id="list-item"> ${data} </li> <button onclick="listStrike()"> Complete </button>`;
+        // console.log(data);
+    }
+
+    function listStrike(){
+        console.log("It's working!!!");
+
+        var list = document.getElementById("list-item").value;
+        list.style.textDecoration = "line-through";
+    }
+    </script>
+</body>
+</html>
