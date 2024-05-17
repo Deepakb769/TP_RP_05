@@ -21,26 +21,6 @@
             </ul>
         </div>
     </div>
-    <script>
-    function listDownTask(){
-        var data = document.getElementById("list-display").value;
-        var taskResult = document.getElementById("result");
-        
-        // var li = document.createElement("li")
-        // taskResult.appendChild(li)
-        //  console.log(taskResult);
-
-        // Generated list in ul and inherit
-        taskResult.innerHTML += `<li id="list-item"> ${data} </li> <button onclick="listStrike()"> Complete </button>`;
-        // console.log(data);
-    }
-
-    function listStrike(){
-        console.log("It's working!!!");
-
-        var list = document.getElementById("list-item").value;
-        list.style.textDecoration = "line-through";
-    }
-    </script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
