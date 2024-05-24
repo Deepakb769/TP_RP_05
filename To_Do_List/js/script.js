@@ -1,35 +1,22 @@
-// function listDownTask(){
-//     var data = document.getElementById("list-display").value
-//     // document.getElementById("result").innerHTML += data;
-//     var result = document.createElement("li")
-//     var result_display =  result.innerText = data.value
-//     document.innerText = result_display
-// }
+var count = 0;
+    function listDownTask(){
+        var data = document.getElementById("list-display").value;
+        var taskResult = document.getElementById("result");
+        
+        // var li = document.createElement("li")
+        // taskResult.appendChild(li)
+        //  console.log(taskResult);
 
-function listDownTask(){
+        // Generated list in ul and inherit
+        taskResult.innerHTML += `<li class="list-text" id="list-${count}"> ${data} </li> <button onclick="listStrike('list-${count}')"> Complete </button>`;
+        count++;
+        // console.log(data);
+    }
 
-    // Using METHOD
-
-    // var data = document.getElementById("list-display").value;
-
-    // var li = document.createElement("li");
-    // li.innerText = data;
-
-    // var strike = document.createElement("button");
-    // strike.innerText = "Complete";
-
-    // var ul = document.getElementById('result');
-
-    // li.style.textDecoration="line-through";
-    // ul.appendChild(li);
-    // ul.appendChild(strike)
-
-    // Using INNERHTML
-
-    var data = document.getElementById("list-display").value;
-    var ul = document.getElementById('result');
-
-    ul.innerHTML = ul.innerHTML + `<li>${data}</li><button onclick="copleteTask()">Complete</button>`;
-
-    
-}
+    function listStrike(id){
+        console.log("It's working!!!");
+        console.log(id)
+        // console.log(taskResult);
+        var list = document.getElementById(id);
+        list.style.textDecoration = "line-through";
+    }
