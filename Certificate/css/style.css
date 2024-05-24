@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins","san-sariff";
+}
+.container{
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+.cert-heading{
+    text-align: center;
+    width: 30%;
+}
+.cert-stamp, .cert-company {
+    width: 30%;
+}
+.cert-company{
+    text-align: end;
+}
+.title-section {
+    display: flex;
+    justify-content: space-around;
+}
+.cert-heading h1{
+    font-size: 70px;
+    margin: 0;
+}
+.cert-heading p {
+    font-size: 20px;
+    margin: 0;
+}
+.present-session{
+    text-align: center;
+    margin-top: 60px;
+}
+hr {
+    border: 1px solid;
+    margin: 0 190px;
+    margin-top: 100px;
+}
+.cert-statement p {
+    text-align: center;
+    padding: 0 185px;
+    font-size: 23px;
+}
+.staff-work {
+    display: flex;
+    justify-content: space-around;
+}
+.date hr, .signature hr {
+    width: 30%;
+    margin-right: 325px;
+}
+.date p, .signature p {
+    text-align: center;
+}
