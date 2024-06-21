@@ -1,0 +1,57 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+  
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+  /* Style for navbar */
+  .navbar{
+    display : flex;
+    justify-content : space-evenly;
+    padding : 20px;
+  }
+  .logo-section{
+    width : 50%;
+  }
+  .menu-list{
+    width : 50%;
+  }
+  nav > div > ul{
+    display: flex;
+    justify-content : space-evenly;
+  }
+  nav > div > ul > li{
+    list-style : none;
+  }
+  
+  /* Style for Hero section */
+  
+  .menu-back{
+    background-color: #2e2e2e;
+    backdrop-filter: blur(3px);
+  }
+  .main-section{
+    display : flex;
+    justify-content: center;
+  }
+
+  .left{
+    width: 50%;
+  }
+  .right{
+    width: 50%;
+  }
+  .left img{
+    width: 200px;
+    height: auto;
+  }
+  
+  /* Style for Form */
+  
+  .form{
+    margin-top : 20px;
+  }
