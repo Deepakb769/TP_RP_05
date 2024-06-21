@@ -1,0 +1,30 @@
+*{
+    font-family: "Bai Jamjuree", sans-serif;
+}
+.container{
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+button{
+    border: 1px solid;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin: 10px;
+    color: white;
+    background: grey;
+    width: 100%;
+    font-size: 18px;
+}
+.display{
+    margin: 10px 0;
+    display: flex;
+}
+#display{
+    padding: 10px 24px;
+    width: 100%;
+    border-radius: 5px;
+    background: black;
+    color: white;
+    font-size: 18px;
+}
